@@ -35,7 +35,6 @@ a {
   top: 10px;
 }
 
-
 .social-top ul{
   width: 10%;
   background-color: #C0881F;
@@ -89,9 +88,7 @@ a {
 .content-inside {
   width: 80%;
   margin: 0 auto;
-  /* padding: 20px; */
   padding-bottom: 160px;
-  /* margin: 0 50px; */
 }
 
 .picture-main {
@@ -99,7 +96,6 @@ a {
 }
 
 .picture-main img {
-  /* max-height: 500px; */
   max-height: 37vh;
 }
 
@@ -203,9 +199,6 @@ a {
 .footer-imgs img{
   /* width: 11%; */
   max-height: 90px;
-  /* max-width: 10vw;
-  max-height: 100px;
-  padding: 5px; */
 }
 
 #footer ul {
@@ -243,13 +236,17 @@ a {
     width: 100%;
     max-width: 100vw;
     margin: 0;
-    padding: 10px;
+    /* padding: 10px; */
   }
 
 
   .content {
     width: 100vw;
     margin: 0;
+  }
+
+  .name h1 {
+    padding-left: 20px;
   }
 
   .columns {
@@ -276,8 +273,13 @@ a {
     margin: 0;
   }
 
+  .column:nth-child(1) span {
+    display: block;
+  }
+
   .column:nth-child(1), .column:nth-child(2) {
     margin: 0;
+    padding: 8px;
   }
 
   .page-wrapper {
