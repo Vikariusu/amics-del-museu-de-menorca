@@ -145,10 +145,14 @@ a {
   display: flex;
   /* float: left; */
   width: 100%;
+  /* min-height: 30%; */
+
 }
 
 .gallery-wrapper div {
+  /* min-height: 30%; */
   display: inline-block;
+  overflow: hidden;
 }
 
 .gallery-wrapper img {
@@ -156,6 +160,8 @@ a {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  /* min-height: 80%; */
+  /* height: 10em; */
 }
 
 .links-right {
@@ -198,6 +204,7 @@ a {
 .footer-imgs div {
   display: inline-block;
   padding: 0 4px;
+  /* overflow: hidden; */
 }
 
 .footer-imgs img{

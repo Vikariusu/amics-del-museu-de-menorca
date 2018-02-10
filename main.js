@@ -6,7 +6,7 @@ var token = '4871987984.c0fd52c.6cf337bfc8b3443ebfd730c04f220349',
 window.mishaProcessResult = function( data ) {
   console.log(data);
 	for( x in data.data ){
-		container.innerHTML += '<div><img src="' + data.data[x].images.standard_resolution.url + '"></div>';
+		container.innerHTML += '<div><a href="' + data.data[x].link + '" target="_blank"><img src="' + data.data[x].images.standard_resolution.url + '"></a></div>';
 	}
 }
 
