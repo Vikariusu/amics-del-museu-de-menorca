@@ -17,13 +17,15 @@
         <nav class="navbar">
           <div id="logo"><img src="images/Amics del Museu de Menorca.png" /></div>
 
-          <button class="hamburger hamburger--spin" type="button">
+          <!-- desktop hamburger -->
+          <button class="hamburger hamburger--spin mobile-disabled" type="button">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
           </button>
 
-          <ul class="navigation hidden">
+          <!--  desktop menu -->
+          <ul class="navigation hidden mobile-disabled">
             <li class="nav-item active"><a href="#">Inici</a></li>
             <li class="nav-item"><a href="#">Associacio</a></li>
             <li class="nav-item"><a href="#">Activitats</a></li>
@@ -31,6 +33,19 @@
             <li class="nav-item"><a href="#">Excavacio arqueológica</a></li>
             <li class="nav-item"><a href="#">Fes-te amic</a></li>
           </ul>
+
+          <!-- mobile menu -->
+          <div id="mySidenav" class="sidenav desktop-disabled">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <li class="nav-item active"><a href="#">Inici</a></li>
+            <li class="nav-item"><a href="#">Associacio</a></li>
+            <li class="nav-item"><a href="#">Activitats</a></li>
+            <li class="nav-item"><a href="#">Publicacions</a></li>
+            <li class="nav-item"><a href="#">Excavacio arqueológica</a></li>
+            <li class="nav-item"><a href="#">Fes-te amic</a></li>
+          </div>
+
+          <span class="mobile-burger desktop-disabled" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </nav>
 
         <!-- <div class="content-inside"> -->
@@ -211,5 +226,16 @@
       </div>
       <script src="jquery-3.3.1.min.js"></script>
       <script type="text/javascript" src="main.js"></script>
+      <script>
+        function openNav() {
+          console.log(document.getElementById("mySidenav"));
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+
+
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+      </script>
   </body>
 </html>
