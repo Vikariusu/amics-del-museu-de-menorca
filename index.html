@@ -13,9 +13,27 @@
     <div class="page-wrapper">
       <div class="content">
 
-        <div id="logo"><img src="images/Amics del Museu de Menorca.png" /></div>
-        <div class="content-inside">
-  <!-- <div id="logo"><img src="images/Amics del Museu de Menorca.png" /></div> -->
+
+        <nav class="navbar">
+          <div id="logo"><img src="images/Amics del Museu de Menorca.png" /></div>
+
+          <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
+          <ul class="navigation hidden">
+            <li class="nav-item"><a href="#">Inici</a></li>
+            <li class="nav-item"><a href="#">Associacio</a></li>
+            <li class="nav-item"><a href="#">Activitats</a></li>
+            <li class="nav-item"><a href="#">Publicacions</a></li>
+            <li class="nav-item"><a href="#">Excavacio arqueológica</a></li>
+            <li class="nav-item"><a href="#">Fes-te amic</a></li>
+          </ul>
+        </nav>
+
+        <!-- <div class="content-inside"> -->
           <div class="name">
             <h1>
               <span>Amics</span>
@@ -40,31 +58,44 @@
               <li><a href="">eng</a></li>
             </ul>
           </div> -->
-
-          <!-- <div class="burger "><img src="images/Hamburger_icon.svg.png" /></div> -->
+<!--
           <button class="hamburger hamburger--spin" type="button">
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
-          </button>
+          </button> -->
 
           <!-- <input class="burger-check" id="burger-check" type="checkbox">
           <label for="burger-check" class="burger"></label> -->
-          <nav>
-            <ul class="navigation hidden">
-              <li class="nav-item"><a href="#">Inici</a></li>
-              <li class="nav-item"><a href="#">Associacio</a></li>
-              <li class="nav-item"><a href="#">Activitats</a></li>
-              <li class="nav-item"><a href="#">Publicacions</a></li>
-              <li class="nav-item"><a href="#">Excavacio arqueológica</a></li>
-              <li class="nav-item"><a href="#">Fes-te amic</a></li>
-            </ul>
-          </nav>
+
 
           <!-- <input type="checkbox" id="nav-trigger" class="nav-trigger" />
           <label for="nav-trigger"></label> -->
 
-          <div class="picture-main"><img src="images/Peca ceramica.png"/></div>
+          <div class="picture-main">
+
+            <div class="social-left mobile-off">
+              <ul>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i></li>
+                <li><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+
+            <img src="images/Peca ceramica.png"/>
+
+            <div class="links-right mobile-off">
+              <div class="links-right-content">
+                <p>contacte</p>
+                <ul>
+                  <li><a href="">cat</a> <span class="separator-desktop">|&nbsp;</span></li>
+                  <li><a href="">&#32;cast</a> <span class="separator-desktop">|&nbsp;</span></li>
+                  <li><a href="">eng</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
           <!-- <div class="social-right">
             <ul>
@@ -75,59 +106,30 @@
             </ul>
           </div> -->
 
-          <div class="links-right">
-            <p>contacte</p>
-            <ul>
-              <li><a href="">cat</a> |&nbsp;</li>
-              <li><a href="">&#32;cast</a> |&nbsp;</li>
-              <li><a href="">eng</a></li>
-            </ul>
-          </div>
-
-          <div class="social-left">
-            <ul>
-              <li><i class="fa fa-map-marker" aria-hidden="true"></i></li>
-              <li><i class="fa fa-envelope-o" aria-hidden="true"></i></li>
-              <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-              <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-            </ul>
-          </div>
-
           <div class="columns">
             <div class="column">
-              <h2>Fes-te <span>soci</span></h2>
+              <div>
+                <!-- <br> -->
+                <h2>Fes-te <span>soci</span></h2>
+              </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in ante a diam sagittis mollis ac dapibus elit.</p>
             </div>
             <div class="column">
-              <h2>Excavació arqueológica </h2>
+              <div>
+                <h2>Excavació arqueológica </h2>
+              </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in ante a diam sagittis mollis ac dapibus elit.</p>
             </div>
           </div>
 
           <div class="gallery-wrapper">
-            <!-- <div>
-              <img src="images/1_archeologygallery_nationalgeographic_611691.jpg">
-            </div>
-            <div>
-              <img src="images/1_archeologygallery_nationalgeographic_611691.jpg">
-            </div>
-            <div>
-              <img src="images/1_archeologygallery_nationalgeographic_611691.jpg">
-            </div>
-            <div>
-              <img src="images/1_archeologygallery_nationalgeographic_611691.jpg">
-            </div>
-            <div>
-              <img src="images/1_archeologygallery_nationalgeographic_611691.jpg">
-            </div> -->
-
           </div>
       </div>
 
       </div>
 
       <div id="footer">
-        <div class="footer-imgs">
+        <!-- <div class="footer-imgs">
           <div>
             <img src="images/Logo Ajuntament d'Alaior blanc.png">
           </div>
@@ -158,15 +160,49 @@
           <div>
             <img src="images/Logo Ministerio de Educación, Cultura y Deporte blanc.png">
           </div>
-        </div>
+        </div> -->
+
+
+        <div class="section group">
+	<div class="col span_1_of_10">
+	   <img src="images/Logo Ajuntament d'Alaior blanc.png">
+	</div>
+	<div class="col span_1_of_10">
+	   <img src="images/Logo Ajuntament de Maó blanc.png">
+	</div>
+	<div class="col span_1_of_10">
+	   <img src="images/Logo CIME blanc.png">
+	</div>
+	<div class="col span_1_of_10">
+	   <img src="images/Logo Govern Illes Balears blanc.png">
+	</div>
+	<div class="col span_1_of_10">
+	   <img src="images/Logo Museu de Menorca blanc.png">
+	</div>
+	<div class="col span_1_of_10">
+	   <img src="images/Logo UGR blanc.png">
+	</div>
+	<div class="col span_1_of_10">
+	   <img src="images/Logo UIB blanc.png">
+	</div>
+	<div class="col span_1_of_10">
+	   <img src="images/Logo UV blanc.png">
+	</div>
+	<div class="col span_1_of_10">
+	   <img src="images/uab_blanc.png">
+	</div>
+	<div class="col span_1_of_10">
+	  <img src="images/Logo Ministerio de Educación, Cultura y Deporte blanc.png">
+	</div>
+</div>
 
         <div class="footer-info">
           <p>Associació d'Amics del Museu de Menorca ©2018 - Tots els drets reservats.</p>
-          <!-- <ul>
+          <ul>
             <li>Inici</li>
             <li>Avis legal</li>
             <li>Cookies</li>
-          </ul> -->
+          </ul>
         </div>
       </div>
       <script src="jquery-3.3.1.min.js"></script>

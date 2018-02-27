@@ -14,10 +14,32 @@ scrElement.setAttribute( 'src', 'https://api.instagram.com/v1/users/self/media/r
 document.body.appendChild( scrElement );
 
 $( document ).ready(function(){
-
   $(".hamburger").on('click', function(e) {
     $('.navigation').toggleClass("hidden");
     e.preventDefault();
     $('.hamburger').toggleClass("is-active");
   })
+
+  // $(window).resize(function () {
+  //   var viewportWidth = $(window).width();
+  //   if (viewportWidth < 480) {
+  //           $(".view").addClass("view view-portfolio").addClass("gallery-mobile");
+  //   }
+  // });
 });
+
+// fixed nav
+// const nav = document.querySelector(".navbar");
+// const topOfNav = nav.offsetTop;
+//
+// function fixNav() {
+//     if(window.scrollY >= topOfNav) {
+//       document.body.style.paddingTop = nav.offsetHeight + 'px';
+//       document.body.classList.add('fixed-nav');
+//     } else {
+//       document.body.style.paddingTop = 0;
+//       document.body.classList.remove('fixed-nav');
+//     }
+//   }
+//
+//   window.addEventListener('scroll', fixNav);
