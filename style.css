@@ -46,9 +46,10 @@ a {
 }
 
 .navigation {
+  margin-left: 40px;
   list-style-type: none;
   position: fixed;
-  right: 50px;
+  right: 60px;
   top: 10px;
   font-family: 'Helvetica', Arial;
 }
