@@ -14,10 +14,11 @@ a {
 }
 
 .social-left {
+  top: 35%;
   height: 125px;
-  width: 125px;
-  /* background-color: pink; */
-  position: relative;
+  /* width: 125px; */
+  background-color: pink;
+  position: fixed;
   text-align: center;
 }
 
@@ -191,15 +192,11 @@ a {
 }
 
 .picture-main {
-  /* text-align: center; */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 
 .picture-main img {
-  max-height: 44vh;
-  /* background-color: pink; */
+  width: 44vh;
 }
 
 .columns {
@@ -253,9 +250,11 @@ a {
 }
 
 .links-right {
+  right: 0;
+  top: 35%;
   height: 125px;
   width: 125px;
-  position: relative;
+  position: fixed;
   /* background-color: pink; */
   transform: rotate(-90deg);
   margin: 0;
