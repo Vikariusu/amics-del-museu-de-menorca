@@ -267,6 +267,10 @@ a {
   bottom: 0;
 }
 
+.links-right-content ul li:hover, .links-right-content p:hover {
+  color: #bcafaf;
+}
+
 .links-right ul {
   display: flex;
   margin-left: -40px;
@@ -431,6 +435,11 @@ a {
 }
 
 @media (max-width: 480px) {
+  .active {
+    border: none;
+    text-decoration: underline;
+  }
+
   .mobile-disabled {
     display: none;
   }
@@ -578,12 +587,14 @@ a {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    letter-spacing: 1.2px;
+    font-family: 'Helvetica', Arial;
 }
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 19px;
     color: #818181;
     display: block;
     transition: 0.3s;

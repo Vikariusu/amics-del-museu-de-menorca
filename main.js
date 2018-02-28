@@ -14,11 +14,11 @@ scrElement.setAttribute( 'src', 'https://api.instagram.com/v1/users/self/media/r
 document.body.appendChild( scrElement );
 
 $( document ).ready(function(){
-  // $(".hamburger").on('click', function(e) {
-  //   $('.navigation').toggleClass("hidden");
-  //   e.preventDefault();
-  //   $('.hamburger').toggleClass("is-active");
-  // })
+  $(".hamburger").on('click', function(e) {
+    $('.navigation').toggleClass("hidden");
+    e.preventDefault();
+    $('.hamburger').toggleClass("is-active");
+  })
 
   $(window).resize(function () {
     // var viewportWidth = $(window).width();
