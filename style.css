@@ -14,6 +14,14 @@ a {
   color: inherit;
 }
 
+nav {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  display: block;
+}
+
 .social-left {
   top: 35%;
   height: 125px;
@@ -167,7 +175,7 @@ a {
 }
 
 .name {
-  margin: 0 80px;
+  margin: 100px 80px 0 80px;
 }
 
 .name h1 {
@@ -222,7 +230,6 @@ a {
 .column {
   color: #586368;
   width: 30%;
-  /* background-color: green; */
 }
 
 .column:nth-child(1) {
@@ -289,7 +296,6 @@ a {
   background-color: #C0881F;
   color: white;
   padding: 15px 0px;
-
   position: relative;
 }
 
@@ -460,7 +466,7 @@ a {
   }
 
   .name {
-    margin: 0;
+    margin: 100px 0 0 0;
   }
 
   .name h1 {
@@ -475,7 +481,6 @@ a {
   }
 
   .column {
-    /* width: 40vw; */
     width: 50vw;
     margin: 0;
     padding: 0px;
