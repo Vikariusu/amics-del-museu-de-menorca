@@ -6,6 +6,7 @@ html, body {
 
 ul {
   list-style-type: none;
+  -webkit-padding-start: 0;
 }
 
 a {
@@ -568,7 +569,7 @@ a {
 
 /* sidenav code below 480 width */
 .sidenav {
-    height: 100%;
+    height: 93%;
     width: 0;
     position: fixed;
     z-index: 1;
@@ -582,13 +583,47 @@ a {
     font-family: 'Helvetica', Arial;
 }
 
+.sidenav-social {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  font-size: 20px;
+}
+
+.sidenav-social li {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.sidenav-flags {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 8px 0 32px;
+  font-size: 36px;
+}
+
+.sidenav-flags div {
+  display: inline-block;
+  height: auto;
+  width: 30px;
+}
+
+.sidenav-flags img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .sidenav a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 19px;
     color: #818181;
     display: block;
     transition: 0.3s;
+}
+
+.sidenav-navigation a {
+  padding: 8px 8px 8px 32px;
 }
 
 .sidenav a:hover {
@@ -598,7 +633,7 @@ a {
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 10px;
     font-size: 36px;
     /* margin-left: 50px; */
 }
