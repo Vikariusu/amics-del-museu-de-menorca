@@ -17,7 +17,7 @@ a {
 
 nav {
   position: fixed;
-  height: 100px;
+  /* height: 100px; */
   width: 100%;
   background-color: white;
   display: block;
@@ -180,7 +180,7 @@ nav {
 }
 
 .name {
-  margin: 100px 80px 0 80px;
+  margin: 80px 80px 0 80px;
 }
 
 .name h1 {
@@ -304,9 +304,21 @@ nav {
   position: relative;
 }
 
+.footer-inner {
+  width: 1650px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px, max-width: 1200px) {
+  .footer-inner {
+    width: 100px;
+  }
+}
+
+
 .footer-imgs {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   align-items: center;
   flex-wrap: wrap;
@@ -350,7 +362,6 @@ nav {
 }
 
 .footer-info ul {
-  margin-right: 15px;
   display: inline-block;
   float: right;
 }
@@ -362,7 +373,6 @@ nav {
 
 .footer-info p {
   display: inline-block;
-  margin-left: 15px;
   width: 60%;
 }
 
